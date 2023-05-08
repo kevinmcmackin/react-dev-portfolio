@@ -1,3 +1,9 @@
+.about__br {
+    height: 0.6rem; /* Change the height value to your desired height */
+    display: block;
+    content: "";
+}
+
 .about__container {
     display: grid;
     grid-template-columns: 30% 60%;
@@ -25,7 +31,7 @@
     transition: var(--transition);
 }
 
-.about__me-image:hover {
+.active__scroll {
     transform: rotate(0deg);
 }
 
