@@ -1,0 +1,137 @@
+/*to make swiper taller, need to change the following height as well as the 'education' class*/
+
+.container.education__container {
+    width: 50%;
+    padding-bottom: 2.5rem;
+    height: fit-content;
+}
+
+.education__wrap {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 1.5rem;
+}
+
+.education__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.education__company {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.education__company-photo-div {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0.2rem solid var(--color-primary-variant);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+}
+
+.education__company-photo {
+    transform: scale(1.2);
+}
+
+.education__photo-photo {
+    border: 0.4rem solid var(--color-primary-variant);
+    border-radius: 1.1rem;
+    max-width: 500px;
+}
+
+.education {
+    background: var(--color-bg-variant);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+    height: fit-content;
+}
+
+.education__description {
+    color: var(--color-light);
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.course__name {
+    color: var(--color-white);
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+.company__name {
+    color: var(--color-light);
+    font-size: 0.9rem;
+}
+
+.education__company-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.education__course {
+    font-size: 0.8rem;
+    color: #BBBBBB;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-primary);
+}
+
+.portfolio__rx-dot {
+    margin-bottom: -0.15rem;
+    margin-right: 0.15rem;
+    color: var(--color-primary);
+}
+
+li {
+    padding-left: 0.8rem;
+    text-indent: -1.1rem;
+    display: block;
+    overflow-wrap: break-word;
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    .container.education__container {
+        width: 75%;
+        padding-bottom: 2.5rem;
+    }
+
+    .education__wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .education {
+        padding-bottom: 1.5rem;
+    }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    .container.education__container {
+        width: var(--container-width-sm);
+    }
+
+    .education__description {
+        width: var(--container-width-sm);
+    }
+
+    .education {
+        padding-bottom: 1.3rem;
+    }
+}
+

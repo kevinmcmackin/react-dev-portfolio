@@ -1,0 +1,219 @@
+br {
+    height: 0.5rem; /* Change the height value to your desired height */
+    display: block;
+    content: "";
+  }
+
+.container.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    width: 90%;
+}
+
+.portfolio__item {
+    background: var(--color-bg-variant);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+}
+
+.portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.portfolio__item-image {
+    border-radius: 1.1rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio__title {
+    margin-top: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--color-primary);
+}
+
+.portfolio__desc {
+    margin-top: 0.6rem;
+    line-height: 1.8rem;
+    font-size: 0.9rem;
+}
+
+.portfolio__github-btn {
+    width: 6rem;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.2rem 0rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+    margin-left: auto;
+}
+
+.portfolio__arrow-out {
+    margin-bottom: -0.13rem;
+    margin-left: 0.1rem;
+}
+
+.portfolio__asterics {
+    color: var(--color-astericks);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio__item h3 {
+    margin: 1.2 0 2rem;
+}
+
+.portfolio__item-cta {
+    width: fit-content;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.portfolio__information {
+    margin-bottom: 7rem;
+}
+
+.portfolio__WIP {
+    display: block;
+    text-align: center;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    margin-bottom: -4rem;
+}
+
+.portfolio__WIP-bg {
+    width: 100%;
+    aspect-ratio: 16/9;
+    filter: blur(0.3rem);
+}
+
+.portfolio__WIP-br {
+    height: 9rem; /* Change the height value to your desired height */
+    display: block;
+    content: "";
+}
+
+.portfolio__ribbon-wrapper {
+    position: relative;
+}
+  
+.portfolio__ribbon {
+    position: absolute;
+    top: 3rem;
+    left: -6rem;
+    padding: 0.5rem 6rem;
+    background-color: red;
+    color: var(--color-white);
+    font-size: 1.1rem;
+    font-weight: bold;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+
+.wip__text {
+    color: #fff582;
+}
+
+.portfolio__yt-wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+  
+.portfolio__yt-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.br_line {
+    display: block;
+    margin-top: 10px;
+    line-height: 150%;
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    .container.portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        width: 70%;
+    }
+
+    .portfolio__information {
+        margin-bottom: 8rem;
+    }
+
+    .portfolio__item:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .portfolio__WIP {
+        margin-bottom: -2rem;
+    }    
+
+    .portfolio__WIP-br {
+        height: 6rem;
+    }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    .container.portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 90%;
+    }
+
+    .portfolio__github-btn {
+        width: 4.7rem;
+        padding: 0.1rem 0.1rem;
+        font-size: 0.8rem;
+    }
+
+    .portfolio__arrow-out {
+        margin-bottom: -0.13rem;
+        margin-left: 0.1rem;
+    }
+
+    .portfolio__WIP {
+        font-size: 1.2rem;
+        margin-bottom: -3rem;
+    }
+
+    .portfolio__WIP-br {
+        height: 4rem;
+        display: block;
+        content: "";
+    }
+
+    .portfolio__ribbon {
+        top: 2rem;
+        padding: 0.4rem 6rem;
+        font-size: 0.8rem;
+    }
+}
