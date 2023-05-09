@@ -1,3 +1,9 @@
+.portfolio__br {
+    height: 0.6rem; /* Change the height value to your desired height */
+    display: block;
+    content: "";
+}
+
 br {
     height: 0.5rem; /* Change the height value to your desired height */
     display: block;

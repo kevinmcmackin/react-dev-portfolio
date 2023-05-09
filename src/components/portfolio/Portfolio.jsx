@@ -27,9 +27,9 @@ const data = [
         description: 
             <>
                 <span>This web store is a place where users can easily buy & sell their used books online. The marketplace connects book buyers and sellers from all over the world making it easy to find the perfect book at an affordable price.</span>
-                <p className='portfolio__WIP-br'></p>
+                <p className='portfolio__br'></p>
                 <span>As a seller, you can easily list your used books for sale, set your prices, and manage your inventory. </span>
-                <p className='portfolio__WIP-br'></p>
+                <p className='portfolio__br'></p>
                 <span>As a buyer, you can browse through the collection of used books, search for specific titles or authors, and compare prices from multiple sellers.</span>
             </>
         ,
@@ -44,7 +44,7 @@ const data = [
         description:
         <>
             <span>This project was made to create a social media application that mimics Twitter.com.</span>
-            <p className='portfolio__WIP-br'></p>
+            <p className='portfolio__br'></p>
             <span>The site includes key functionality from Twitter such as posting, liking, and following. You can easily interact with other users by sharing your thoughts, reposting and liking content, and building your network of followers.</span>
         </>
         ,

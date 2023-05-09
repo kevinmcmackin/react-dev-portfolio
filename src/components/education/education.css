@@ -1,4 +1,8 @@
-/*to make swiper taller, need to change the following height as well as the 'education' class*/
+.education__br {
+    height: 0.6rem; /* Change the height value to your desired height */
+    display: block;
+    content: "";
+}
 
 .container.education__container {
     width: 50%;
