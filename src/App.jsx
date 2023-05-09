@@ -17,6 +17,14 @@ import ME from './assets/headshot_no_bg.png'
 const App = () => {
     const [loading, setLoading] = useState(true);
 
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //       setLoading(false);
+    //     }, 8000);
+      
+    //     return () => clearTimeout(timer);
+    //   }, []);
+      
     useEffect(() => {
         window.addEventListener('load', () => {
           setLoading(false);
@@ -25,19 +33,15 @@ const App = () => {
 
     return (
         <>
-          {loading ? <Loader /> : null}
-          {!loading ? (
-            <>
-              <Nav />
-              <Header />
-              <About />
-              <Experience />
-              <Portfolio />
-              <Education />
-              <Contact />
-              <Footer />
-            </>
-          ) : null}
+            {loading ? <Loader /> : null}
+            <Nav />
+            <Header />
+            <About />
+            <Experience />
+            <Portfolio />
+            <Education />
+            <Contact />
+            <Footer />
         </>
     );
       
