@@ -11,14 +11,28 @@ import Loader from './components/loader/Loader.jsx'
 // import Preloader from 'preloader.js';
 
 
+import ME from './assets/headshot_no_bg.png'
+
+
 const App = () => {
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        // window.onload = () => {
-          setLoading(false);
-        // };
-    }, []);
+    // useEffect(() => {
+    //     window.addEventListener('load', () => {
+    //       setLoading(false);
+    //     });
+    // }, []);
+
+    // window.addEventListener('load', () => {
+    //     setLoading(false)
+    // });
+
+    const image = new Image();
+    image.src = 'http://kevthedev.ca/assets/headshot_no_bg.png';
+    image.onload = () => {
+        console.log('here')
+        setLoading(false)
+    };
 
     return (
         <>
