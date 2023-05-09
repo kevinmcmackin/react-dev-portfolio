@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './about.css'
 import ME_LEAN from '../../assets/headshot_lean.jpg'
+import { PacmanLoader } from 'react-spinners';
+
 
 const About = () => {
     const [activeNav, setActiveNav] = useState('#')
