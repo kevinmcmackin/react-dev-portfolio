@@ -23,14 +23,18 @@ const App = () => {
     return (
         <>
             {loading ? <Loader /> : null}
-            <Header />
-            {!loading ? <Nav />: null}
-            <About /> 
-            <Experience /> 
-            <Portfolio />
-            <Education />
-            <Contact />
-            <Footer />
+            {!loading ? 
+                <>
+                    <Nav />
+                    <Header />
+                    <About /> 
+                    <Experience /> 
+                    <Portfolio />
+                    <Education />
+                    <Contact />
+                    <Footer />
+                </>
+            : null}
         </>
     )
 }
