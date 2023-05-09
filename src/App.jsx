@@ -30,7 +30,6 @@ const App = () => {
             <>
               <Nav />
               <Header />
-              <Header />
               <About />
               <Experience />
               <Portfolio />
