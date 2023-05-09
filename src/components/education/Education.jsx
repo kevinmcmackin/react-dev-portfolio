@@ -39,11 +39,11 @@ const data = [
             <span>
                 In May 2022, I completed my Bachelor of Science in Mechanical Engineering from the University of New Brunswick, Fredericton. 
             </span>
-            <br />
+            <p className='about__br'></p>
             <span>
                 Some notable courses I took during my degree which have helped me in my programming journey include:
             </span>
-            <br />
+            <p className='about__br'></p>
             <span>
                 <ul>
                     <li><RxDotFilled className='portfolio__rx-dot'/><span className='fleeex'>Programming & Problem Solving for Engineers</span></li>
