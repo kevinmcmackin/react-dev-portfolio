@@ -33,7 +33,7 @@ const About = () => {
                     </div>
                 </div>
                 <p className='about__desc'>
-                    <span>Hello, my name is Kevin McMackin. I am a full-stack/front-end developer based in New Brunswick, Canada. </span>
+                    <span>Hey! My name is Kevin McMackin. I am a full-stack/front-end developer based in New Brunswick, Canada. </span>
                     <p className='about__br'></p>
                     <span>I graduated in 2022 with a degree in Mechanical Engineering from UNB. After discovering my passion for innovation and design during my studies, I decided to pivot to programming, where I can now leverage my problem-solving skills and apply my creative abilities to develop unique and impactful software solutions.</span>
                     <p className='about__br'></p>

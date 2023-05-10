@@ -124,6 +124,7 @@ li {
     .container.education__container {
         width: 75%;
         padding-bottom: 2.5rem;
+        background-color: ree;
     }
 
     .education {

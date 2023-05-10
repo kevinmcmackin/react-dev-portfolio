@@ -1,17 +1,19 @@
 .about__br {
-    height: 0.6rem; /* Change the height value to your desired height */
+    height: 0.6rem;
     display: block;
     content: "";
 }
 
-.about__container {
+.container.about__container {
     display: grid;
-    grid-template-columns: 30% 60%;
-    gap: 10%;
+    grid-template-columns: 3fr 6fr;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
 .about__me {
-    width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(
@@ -19,9 +21,9 @@
         transparent, 
         var(--color-primary), 
         transparent
-    );
-    display: grid;
-    place-items: center;
+    );    
+    /* height: 22rem; */
+    width: 100%;
 }
 
 .about__me-image {
@@ -37,6 +39,9 @@
 
 .about__desc {
     font-size: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
 }
 
 .about__cards {
@@ -82,14 +87,14 @@
 
 /* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
-    .about__container {
+    .container.about__container {
         grid-template-columns: 1fr;
         gap: 0;
     }
 
     .about__me {
         width: 50%;
-        margin: 2rem auto 4rem;
+        margin: 0rem auto 3rem;
     }
 
     .about__content p {
@@ -101,11 +106,17 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .container.about__container {
+        width: 70%;
+    }
+}
+
 /* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
 @media screen and (max-width: 600px) {
     .about__me {
-        width: 65%;
-        margin: 0 auto 3rem;
+        width: 80%;
+        margin: 0 auto 2rem;
     }
 
     .about__cards {
