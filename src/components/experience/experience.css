@@ -9,14 +9,16 @@
     background: var(--color-bg-variant);
     padding: 2.9rem 4rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 0.3rem solid transparent;
     transition: var(--transition);
 }
 
 .experience__container > div:hover {
-    background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+    transform: scale(1.05);
+    z-index: 2;
+    border: 0.3rem solid var(--color-primary-variant);
 }
 
 .experience__container > div h3 {
