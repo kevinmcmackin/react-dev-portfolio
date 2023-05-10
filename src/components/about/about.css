@@ -5,8 +5,7 @@
 }
 
 .container.about__container {
-    display: grid;
-    grid-template-columns: 3fr 6fr;
+    display: flex;
     width: 80%;
     justify-content: center;
     align-items: center;
@@ -22,8 +21,7 @@
         var(--color-primary), 
         transparent
     );    
-    /* height: 22rem; */
-    width: 100%;
+    max-height: 22rem;
 }
 
 .about__me-image {
@@ -42,6 +40,7 @@
     align-items: center;
     justify-content: center;
     margin: auto 0;
+    width: 40%;
 }
 
 .about__cards {
@@ -88,6 +87,7 @@
 /* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
     .container.about__container {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 0;
     }
@@ -103,6 +103,7 @@
 
     .about__desc {
         font-size: 1rem;
+        width: 100%;
     }
 }
 
