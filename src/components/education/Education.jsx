@@ -154,11 +154,11 @@ const Education = () => {
 
             <Swiper className="container education__container"
              // install Swiper modules
-            modules={[Pagination, Navigation]}
-            spaceBetween={40}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
+                modules={[Pagination, Navigation]}
+                spaceBetween={40}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
             >
                 {
                     data.map(({photo, course, company_photo, company, title, description}, index) => {

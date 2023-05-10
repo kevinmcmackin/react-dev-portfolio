@@ -106,17 +106,24 @@ li {
     overflow-wrap: break-word;
 }
 
+@media screen and (max-width: 1600px) {
+    .education__wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .education__wrap img:first-child {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 /* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
     .container.education__container {
         width: 75%;
         padding-bottom: 2.5rem;
-    }
-
-    .education__wrap {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
     }
 
     .education {
