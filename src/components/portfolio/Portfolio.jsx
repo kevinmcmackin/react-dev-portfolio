@@ -1,7 +1,6 @@
 import React from 'react'
 import './portfolio.css'
 import SS from '../../assets/ss.png';
-import IMG2 from '../../assets/duck.jpeg'
 import { BsArrowUpRightSquare } from 'react-icons/bs';
 import YouTube from 'react-youtube';
 
@@ -22,7 +21,7 @@ const data = [
     },
     {
         id: 2, 
-        image: IMG2,
+        image: SS,
         title: 'Used Book Ecommerce Web Store',
         description: 
             <>
@@ -39,7 +38,7 @@ const data = [
     },
     {
         id: 3, 
-        image: IMG2,
+        image: SS,
         title: "'Twitter Clone' Social Media App",
         description:
         <>
